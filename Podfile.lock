@@ -1,15 +1,25 @@
 PODS:
+  - Alamofire (4.0.1)
+  - AlamofireObjectMapper (4.0.0):
+    - Alamofire (~> 4.0)
+    - ObjectMapper (~> 2.0)
+  - ObjectMapper (2.0.0)
   - PureLayout (3.0.2)
   - Swinject (2.0.0-beta.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.0.1)
+  - AlamofireObjectMapper (~> 4.0)
   - PureLayout
   - Swinject (= 2.0.0-beta.2)
 
 SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AlamofireObjectMapper: 9faa3ce5a240efda1b209009a2d6e1e949227abc
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   Swinject: 69a893192efa9f2cc44be79ef423d04d571b6af9
 
-PODFILE CHECKSUM: 4a576a6fb1d4c40591dc6c067891d70976916262
+PODFILE CHECKSUM: 8d2678a2a573c50c2784ece277d945bad7c35c86
 
 COCOAPODS: 1.0.1

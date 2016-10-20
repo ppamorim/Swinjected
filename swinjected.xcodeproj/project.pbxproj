@@ -10,6 +10,13 @@
 		4848F3F21DB8308600F6F9E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848F3F11DB8308600F6F9E6 /* HomeViewController.swift */; };
 		4848F3F51DB8358B00F6F9E6 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848F3F41DB8358B00F6F9E6 /* UIColorExtension.swift */; };
 		4848F3F71DB8372400F6F9E6 /* HomeViewControllerConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848F3F61DB8372400F6F9E6 /* HomeViewControllerConstraints.swift */; };
+		4894EE0C1DB96B9B006D1CB2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894EE0B1DB96B9B006D1CB2 /* Item.swift */; };
+		4894EE101DB96C0D006D1CB2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4894EE0D1DB96C0D006D1CB2 /* Alamofire.framework */; };
+		4894EE111DB96C0D006D1CB2 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4894EE0E1DB96C0D006D1CB2 /* AlamofireObjectMapper.framework */; };
+		4894EE121DB96C0D006D1CB2 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4894EE0F1DB96C0D006D1CB2 /* ObjectMapper.framework */; };
+		4894EE141DB96C2D006D1CB2 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894EE131DB96C2D006D1CB2 /* ItemRequest.swift */; };
+		4894EE161DB96D2B006D1CB2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894EE151DB96D2B006D1CB2 /* Request.swift */; };
+		4894EE181DB96E2B006D1CB2 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894EE171DB96E2B006D1CB2 /* URL.swift */; };
 		4896A95B1DB82ABF000CF878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4896A95A1DB82ABF000CF878 /* AppDelegate.swift */; };
 		4896A9621DB82ABF000CF878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4896A9611DB82ABF000CF878 /* Assets.xcassets */; };
 		4896A9651DB82ABF000CF878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4896A9631DB82ABF000CF878 /* LaunchScreen.storyboard */; };
@@ -28,6 +35,13 @@
 		4848F3F11DB8308600F6F9E6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Swinjected/UI/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		4848F3F41DB8358B00F6F9E6 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		4848F3F61DB8372400F6F9E6 /* HomeViewControllerConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewControllerConstraints.swift; path = Swinjected/UI/HomeViewControllerConstraints.swift; sourceTree = SOURCE_ROOT; };
+		4894EE0B1DB96B9B006D1CB2 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4894EE0D1DB96C0D006D1CB2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/swinjected-agldzcqxcoamghbjurvujdumkehp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		4894EE0E1DB96C0D006D1CB2 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/swinjected-agldzcqxcoamghbjurvujdumkehp/Build/Products/Debug-iphonesimulator/AlamofireObjectMapper/AlamofireObjectMapper.framework"; sourceTree = "<group>"; };
+		4894EE0F1DB96C0D006D1CB2 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/swinjected-agldzcqxcoamghbjurvujdumkehp/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		4894EE131DB96C2D006D1CB2 /* ItemRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
+		4894EE151DB96D2B006D1CB2 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		4894EE171DB96E2B006D1CB2 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		4896A9571DB82ABF000CF878 /* swinjected.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swinjected.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4896A95A1DB82ABF000CF878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4896A9611DB82ABF000CF878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4894EE101DB96C0D006D1CB2 /* Alamofire.framework in Frameworks */,
+				4894EE111DB96C0D006D1CB2 /* AlamofireObjectMapper.framework in Frameworks */,
+				4894EE121DB96C0D006D1CB2 /* ObjectMapper.framework in Frameworks */,
 				4896A96E1DB82C45000CF878 /* PureLayout.framework in Frameworks */,
 				4896A96F1DB82C45000CF878 /* Swinject.framework in Frameworks */,
 				6626BF1DC38F7AEBA24AACD4 /* Pods_swinjected.framework in Frameworks */,
@@ -68,6 +85,9 @@
 		33C79EEB2452FA5743FCAFBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4894EE0D1DB96C0D006D1CB2 /* Alamofire.framework */,
+				4894EE0E1DB96C0D006D1CB2 /* AlamofireObjectMapper.framework */,
+				4894EE0F1DB96C0D006D1CB2 /* ObjectMapper.framework */,
 				4896A96C1DB82C45000CF878 /* PureLayout.framework */,
 				4896A96D1DB82C45000CF878 /* Swinject.framework */,
 				4D34DB84BD37FD0832F31677 /* Pods_swinjected.framework */,
@@ -81,6 +101,24 @@
 				4848F3F41DB8358B00F6F9E6 /* UIColorExtension.swift */,
 			);
 			name = Helper;
+			sourceTree = "<group>";
+		};
+		4894EE091DB96232006D1CB2 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				4894EE131DB96C2D006D1CB2 /* ItemRequest.swift */,
+				4894EE151DB96D2B006D1CB2 /* Request.swift */,
+				4894EE171DB96E2B006D1CB2 /* URL.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		4894EE0A1DB9623D006D1CB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4894EE0B1DB96B9B006D1CB2 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4896A94E1DB82ABF000CF878 = {
@@ -154,6 +192,8 @@
 		4896A9741DB82D79000CF878 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				4894EE0A1DB9623D006D1CB2 /* Model */,
+				4894EE091DB96232006D1CB2 /* Request */,
 				4896A9731DB82D6C000CF878 /* Interactor */,
 				4896A9721DB82D66000CF878 /* Presenter */,
 			);
@@ -283,13 +323,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4896A9761DB82E23000CF878 /* HomePresenter.swift in Sources */,
+				4894EE0C1DB96B9B006D1CB2 /* Item.swift in Sources */,
 				4848F3F51DB8358B00F6F9E6 /* UIColorExtension.swift in Sources */,
 				4896A9781DB82E2D000CF878 /* HomePresenterImpl.swift in Sources */,
+				4894EE161DB96D2B006D1CB2 /* Request.swift in Sources */,
 				4896A97C1DB82E41000CF878 /* HomeInteractorImpl.swift in Sources */,
 				4896A97A1DB82E38000CF878 /* HomeInteractor.swift in Sources */,
+				4894EE141DB96C2D006D1CB2 /* ItemRequest.swift in Sources */,
 				4896A95B1DB82ABF000CF878 /* AppDelegate.swift in Sources */,
 				4848F3F71DB8372400F6F9E6 /* HomeViewControllerConstraints.swift in Sources */,
 				4848F3F21DB8308600F6F9E6 /* HomeViewController.swift in Sources */,
+				4894EE181DB96E2B006D1CB2 /* URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

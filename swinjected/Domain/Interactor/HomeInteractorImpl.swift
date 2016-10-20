@@ -13,7 +13,8 @@ class HomeInteractorImpl: HomeInteractor {
   var callback: HomeCallback?
   
   func requestData() {
-    callback?.onSuccess()
+    requestItems(success: { data in self.callback?.onSuccess() },
+                 error: { self.callback?.onError() })
   }
   
 }
