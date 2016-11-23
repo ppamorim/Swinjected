@@ -1,4 +1,3 @@
-
 protocol HomePresenter {
   var view: HomeView? { get set }
   var items: Array<Item> { get }

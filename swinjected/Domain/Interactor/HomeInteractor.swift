@@ -1,4 +1,3 @@
-
 protocol HomeInteractor {
   var callback: HomeCallback? { get set }
   func requestData()

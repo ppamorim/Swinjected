@@ -7,13 +7,16 @@ Developed By
 
 * Pedro Paulo de Amorim - <pp.amorim@hotmail.com>
 
-![Logo][2][https://ie.linkedin.com/in/ppamorim/en]
+[![Linkedin][2]](https://ie.linkedin.com/in/ppamorim/en)
 
 Libraries used on the sample project
 ------------------------------------
 
 * [Swinject][10]
 * [PureLayout][11]
+* [Alamofire][12]
+* [AlamofireObjectMapper][13]
+* [AlamofireImage][14]
 
 License
 -------
@@ -41,7 +44,10 @@ License
     THE SOFTWARE.
 
 [1]: ./art/logo_compress.png
-[2]: ./art/linkedin_logo/png
+[2]: ./art/linkedin-logo.png
 
 [10]: https://github.com/Swinject/Swinject
 [11]: https://github.com/PureLayout/PureLayout
+[12]: https://github.com/Alamofire/Alamofire
+[13]: https://github.com/tristanhimmelman/AlamofireObjectMapper
+[14]: https://github.com/Alamofire/AlamofireImage
