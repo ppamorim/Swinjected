@@ -7,9 +7,7 @@ Developed By
 
 * Pedro Paulo de Amorim - <pp.amorim@hotmail.com>
 
-<a href="https://www.linkedin.com/profile/view?id=185411359">
-  <img alt="Add me to Linkedin" src="http://imageshack.us/a/img41/7877/smallld.png" />
-</a>
+![Logo][2](https://ie.linkedin.com/in/ppamorim/en)
 
 Libraries used on the sample project
 ------------------------------------
@@ -43,6 +41,7 @@ License
     THE SOFTWARE.
 
 [1]: ./art/logo_compress.png
+[2]: ./art/linkedin_logo/png
 
 [10]: https://github.com/Swinject/Swinject
 [11]: https://github.com/PureLayout/PureLayout

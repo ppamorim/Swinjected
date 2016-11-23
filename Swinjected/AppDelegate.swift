@@ -35,7 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   /**
    Load the ViewController on the application window.
-   
    After the container creation, this method will inject the
    dependency needed by the class, using the instance of this
    container. The instance of the interactor was loaded too.

@@ -10,6 +10,10 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
+/**
+ Request the server data, using Alamofire and mapping 
+ this JSON to Array of Items.
+ */
 func requestItems(successHandler: @escaping Success<Array<Item>>, errorHandler: @escaping Error) {
   Alamofire
     .request(ITEM_REQUEST_URL)
