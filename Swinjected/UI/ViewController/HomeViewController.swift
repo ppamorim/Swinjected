@@ -8,12 +8,24 @@ class HomeViewController: UIViewController {
   var viewReady = false
   var presenter: HomePresenter?
   
+  let topBarView: UIView = {
+    let view = UIView.newAutoLayout()
+    view.backgroundColor = UIColor(rgba: "#222223")
+    return view
+  }()
+  
+  let logoView: UIImageView = {
+    let view = UIImageView.newAutoLayout()
+    view.image = UIImage(named: "LogoSmall")
+    return view
+  }()
+  
   /**
    Table view of the settings screen.
    */
   let itemTableView: UITableView = {
     let tableView = UITableView.newAutoLayout()
-    tableView.backgroundColor = UIColor.blue
+    tableView.backgroundColor = .blue
     tableView.tableFooterView = UIView()
     tableView.register(ItemViewCell.self, forCellReuseIdentifier: ITEM_CELL)
     return tableView
@@ -21,10 +33,11 @@ class HomeViewController: UIViewController {
   
   init(_ presenter: HomePresenter?) {
     super.init(nibName: nil, bundle: nil)
-    self.presenter = presenter
-    if self.presenter == nil {
+    if presenter == nil {
       fatalError("Presenter must be injected")
     }
+    self.presenter = presenter
+    self.presenter?.view = self
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -45,13 +58,23 @@ class HomeViewController: UIViewController {
   override func updateViewConstraints() {
     if !viewReady {
       configTableViewConstraints()
+      configTopBarViewConstraints()
+      configLogoConstraints()
       viewReady = true
     }
     super.updateViewConstraints()
   }
   
+  /**
+   Return the style of the status bar for this ViewController.
+   */
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
+  }
+  
   func configViews() {
-    [itemTableView].forEach { view.addSubview($0) }
+    [itemTableView, topBarView].forEach { view.addSubview($0) }
+    topBarView.addSubview(logoView)
     view.setNeedsUpdateConstraints()
   }
   
@@ -64,25 +87,22 @@ class HomeViewController: UIViewController {
     presenter?.sync()
   }
   
-  /**
-   Return the style of the status bar for this ViewController.
-   */
-  override var preferredStatusBarStyle: UIStatusBarStyle {
-    return .lightContent
-  }
-  
 }
 
 extension HomeViewController: UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    print("tableView eee")
     return tableView.dequeueReusableCell(withIdentifier: ITEM_CELL, for: indexPath)
   }
 
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    print("numberOfRowsInSection) \(presenter?.items.count)")
     return presenter?.items.count ?? 0
+  }
+  
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 1
   }
   
 }
@@ -107,6 +127,7 @@ extension HomeViewController: UITableViewDelegate {
 extension HomeViewController: HomeView {
   
   func onSuccess() {
+    print("data to loco:\(presenter?.items.count)")
     itemTableView.reloadData()
   }
   

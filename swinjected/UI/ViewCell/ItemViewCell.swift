@@ -7,15 +7,15 @@ class ItemViewCell: UITableViewCell {
   
   let titleLabel: UILabel = {
     let label = UILabel.newAutoLayout()
-    label.backgroundColor = UIColor.white
+    label.backgroundColor = .white
     label.textAlignment = .left
-    label.textColor = UIColor.black
+    label.textColor = .black
     return label
   }()
   
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
-    backgroundColor = UIColor.black
+    backgroundColor = .black
     [titleLabel].forEach { addSubview($0) }
     setNeedsUpdateConstraints()
     updateConstraintsIfNeeded()
