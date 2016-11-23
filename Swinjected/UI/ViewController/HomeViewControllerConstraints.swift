@@ -18,4 +18,14 @@ extension HomeViewController {
     logoView.autoSetDimension(.height, toSize: 30)
   }
   
+  func configTryAgainButtonConstraints() {
+    tryAgainButton.autoCenterInSuperview()
+  }
+  
+  func activityIndicatorViewConstraints() {
+    activityIndicatorView.autoCenterInSuperview()
+    activityIndicatorView.autoMatch(.width, to: .width, of: self.view, withMultiplier: 0.1)
+    activityIndicatorView.autoMatch(.height, to: .width, of: activityIndicatorView)
+  }
+  
 }

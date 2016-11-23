@@ -1,6 +1,7 @@
 import UIKit
 import PureLayout
 
+//Constant that identifies the ViewCell.
 let ITEM_CELL = "ItemCell"
 
 /**
@@ -12,8 +13,13 @@ let ITEM_CELL = "ItemCell"
  */
 class HomeViewController: UIViewController {
   
+  //This variable controls the state of constraints configuration.
   var viewReady = false
+  
+  //Presenter of this view.
   var presenter: HomePresenter?
+  
+  //Variable used to determinate the ViewCell height.
   var cellHeight: CGFloat = 0.0
   
   let topBarView: UIView = {
@@ -38,7 +44,32 @@ class HomeViewController: UIViewController {
     tableView.tableFooterView = UIView()
     tableView.register(ItemViewCell.self, forCellReuseIdentifier: ITEM_CELL)
     tableView.separatorColor = .clear
+    tableView.isHidden = true
     return tableView
+  }()
+  
+  /**
+   This button is used to force the retry if any error on the
+   request happens.
+   */
+  let tryAgainButton: UIButton = {
+    let view = UIButton.newAutoLayout()
+    view.setTitle("try_again".localized, for: .normal)
+    view.setTitleColor(.white, for: .normal)
+    view.backgroundColor = UIColor(rgba: "#222223")
+    view.contentEdgeInsets = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
+    view.layer.cornerRadius = 4.0
+    view.isHidden = true
+    view.addTarget(nil, action: #selector(loadData), for: .touchUpInside)
+    return view
+  }()
+  
+  //Loading indicator
+  let activityIndicatorView: UIActivityIndicatorView = {
+    let activityIndicatorView = UIActivityIndicatorView.newAutoLayout()
+    activityIndicatorView.color = UIColor(rgba: "#ff5823")
+    activityIndicatorView.startAnimating()
+    return activityIndicatorView
   }()
   
   /**
@@ -85,9 +116,11 @@ class HomeViewController: UIViewController {
    */
   override func updateViewConstraints() {
     if !viewReady {
+      activityIndicatorViewConstraints()
       configTableViewConstraints()
       configTopBarViewConstraints()
       configLogoConstraints()
+      configTryAgainButtonConstraints()
       viewReady = true
     }
     super.updateViewConstraints()
@@ -105,7 +138,11 @@ class HomeViewController: UIViewController {
    that force the calculation of the constraints.
    */
   func configViews() {
-    [itemTableView, topBarView].forEach { view.addSubview($0) }
+    view.backgroundColor = .black
+    [activityIndicatorView,
+     itemTableView,
+     tryAgainButton,
+     topBarView].forEach { view.addSubview($0) }
     topBarView.addSubview(logoView)
     view.setNeedsUpdateConstraints()
   }
@@ -125,6 +162,9 @@ class HomeViewController: UIViewController {
    to show this data loading feature.
    */
   func loadData() {
+    itemTableView.isHidden = true
+    tryAgainButton.isHidden = true
+    activityIndicatorView.isHidden = false
     presenter?.sync()
   }
   
@@ -185,11 +225,16 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: HomeView {
   
   func onSuccess() {
+    itemTableView.isHidden = false
+    tryAgainButton.isHidden = true
+    activityIndicatorView.isHidden = true
     itemTableView.reloadData()
   }
   
   func onError(_ error: Swift.Error) {
-    
+    itemTableView.isHidden = true
+    tryAgainButton.isHidden = false
+    activityIndicatorView.isHidden = true
   }
   
 }
