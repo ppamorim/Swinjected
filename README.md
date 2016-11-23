@@ -7,7 +7,7 @@ Developed By
 
 * Pedro Paulo de Amorim - <pp.amorim@hotmail.com>
 
-![Logo][2](https://ie.linkedin.com/in/ppamorim/en)
+![Logo][2][https://ie.linkedin.com/in/ppamorim/en]
 
 Libraries used on the sample project
 ------------------------------------
