@@ -29,7 +29,7 @@
 		4896A9781DB82E2D000CF878 /* HomePresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4896A9771DB82E2D000CF878 /* HomePresenterImpl.swift */; };
 		4896A97A1DB82E38000CF878 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4896A9791DB82E38000CF878 /* HomeInteractor.swift */; };
 		4896A97C1DB82E41000CF878 /* HomeInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4896A97B1DB82E41000CF878 /* HomeInteractorImpl.swift */; };
-		48AEF8F91DE5ECB3006A955C /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AEF8F81DE5ECB3006A955C /* ItemViewCell.swift */; };
+		48B9D8401DE64EB60090BF32 /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9D83F1DE64EB60090BF32 /* ItemViewCell.swift */; };
 		6626BF1DC38F7AEBA24AACD4 /* Pods_swinjected.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D34DB84BD37FD0832F31677 /* Pods_swinjected.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +60,7 @@
 		4896A9771DB82E2D000CF878 /* HomePresenterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterImpl.swift; sourceTree = "<group>"; };
 		4896A9791DB82E38000CF878 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		4896A97B1DB82E41000CF878 /* HomeInteractorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorImpl.swift; sourceTree = "<group>"; };
-		48AEF8F81DE5ECB3006A955C /* ItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
+		48B9D83F1DE64EB60090BF32 /* ItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemViewCell.swift; path = Swinjected/Domain/ItemViewCell.swift; sourceTree = SOURCE_ROOT; };
 		4D34DB84BD37FD0832F31677 /* Pods_swinjected.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swinjected.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -216,7 +216,7 @@
 		48AEF8F71DE5EC9D006A955C /* ViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				48AEF8F81DE5ECB3006A955C /* ItemViewCell.swift */,
+				48B9D83F1DE64EB60090BF32 /* ItemViewCell.swift */,
 			);
 			path = ViewCell;
 			sourceTree = "<group>";
@@ -344,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B9D8401DE64EB60090BF32 /* ItemViewCell.swift in Sources */,
 				4896A9761DB82E23000CF878 /* HomePresenter.swift in Sources */,
 				4894EE0C1DB96B9B006D1CB2 /* Item.swift in Sources */,
 				4848F3F51DB8358B00F6F9E6 /* UIColorExtension.swift in Sources */,
@@ -354,7 +355,6 @@
 				4894EE141DB96C2D006D1CB2 /* ItemRequest.swift in Sources */,
 				4866C2151DE63F85004CFEC7 /* StringExtension.swift in Sources */,
 				4896A95B1DB82ABF000CF878 /* AppDelegate.swift in Sources */,
-				48AEF8F91DE5ECB3006A955C /* ItemViewCell.swift in Sources */,
 				4848F3F71DB8372400F6F9E6 /* HomeViewControllerConstraints.swift in Sources */,
 				4848F3F21DB8308600F6F9E6 /* HomeViewController.swift in Sources */,
 				4894EE181DB96E2B006D1CB2 /* URL.swift in Sources */,
