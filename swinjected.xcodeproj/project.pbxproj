@@ -60,7 +60,7 @@
 		4896A9771DB82E2D000CF878 /* HomePresenterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterImpl.swift; sourceTree = "<group>"; };
 		4896A9791DB82E38000CF878 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		4896A97B1DB82E41000CF878 /* HomeInteractorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorImpl.swift; sourceTree = "<group>"; };
-		48B9D83F1DE64EB60090BF32 /* ItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemViewCell.swift; path = Swinjected/Domain/ItemViewCell.swift; sourceTree = SOURCE_ROOT; };
+		48B9D83F1DE64EB60090BF32 /* ItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemViewCell.swift; path = Swinjected/UI/ViewCell/ItemViewCell.swift; sourceTree = SOURCE_ROOT; };
 		4D34DB84BD37FD0832F31677 /* Pods_swinjected.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swinjected.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
