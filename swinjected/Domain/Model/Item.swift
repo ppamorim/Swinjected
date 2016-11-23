@@ -13,6 +13,7 @@ class Item: Mappable {
   
   var title: String?
   var description: String?
+  var image: String?
   
   /**
    Initializator of ObjectMapper.
@@ -28,6 +29,7 @@ class Item: Mappable {
   func mapping(map: Map) {
     title <- map["title"]
     description <- map["description"]
+    image <- map["image"]
   }
   
 }

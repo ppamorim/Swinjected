@@ -7,6 +7,7 @@ target 'swinjected' do
   pod 'PureLayout' #There is a lot of alternatives and you don't need it to create this sample, this guy is just for views!
   pod 'Alamofire', '~> 4.0.1' #Http requester, because no app is 100% successful offline...
   pod 'AlamofireObjectMapper', '~> 4.0' #We need to transform JSON to data.
+  pod 'AlamofireImage', '~> 3.1' #Loading images, my images...
 end
 
 post_install do |installer|

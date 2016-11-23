@@ -1,5 +1,6 @@
 import UIKit
 import PureLayout
+import AlamofireImage
 
 class ItemViewCell: UITableViewCell {
   
@@ -7,16 +8,20 @@ class ItemViewCell: UITableViewCell {
   
   let titleLabel: UILabel = {
     let label = UILabel.newAutoLayout()
-    label.backgroundColor = .white
     label.textAlignment = .left
-    label.textColor = .black
+    label.textColor = .white
     return label
+  }()
+  
+  let backgroundImageView: UIImageView = {
+    let view = UIImageView.newAutoLayout()
+    return view
   }()
   
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     backgroundColor = .black
-    [titleLabel].forEach { addSubview($0) }
+    [backgroundImageView, titleLabel].forEach { addSubview($0) }
     setNeedsUpdateConstraints()
     updateConstraintsIfNeeded()
   }
@@ -35,6 +40,9 @@ class ItemViewCell: UITableViewCell {
   
   func configLabels(_ item: Item) {
     titleLabel.text = item.title
+    if let imageAddress = item.image, let imageURL = URL(string: imageAddress) {
+      backgroundImageView.af_setImage(withURL: imageURL)
+    }
   }
   
 }
@@ -42,8 +50,9 @@ class ItemViewCell: UITableViewCell {
 extension ItemViewCell {
   
   func configConstraints() {
-    titleLabel.autoPinEdge(toSuperviewEdge: .left, withInset: 14.0)
-    titleLabel.autoPinEdge(toSuperviewEdge: .top, withInset: 9.0)
+    titleLabel.autoPinEdge(toSuperviewEdge: .left, withInset: 16.0)
+    titleLabel.autoPinEdge(toSuperviewEdge: .bottom, withInset: 16.0)
+    backgroundImageView.autoPinEdgesToSuperviewEdges()
   }
   
 }

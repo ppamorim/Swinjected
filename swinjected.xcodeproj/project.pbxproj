@@ -10,10 +10,11 @@
 		4848F3F21DB8308600F6F9E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848F3F11DB8308600F6F9E6 /* HomeViewController.swift */; };
 		4848F3F51DB8358B00F6F9E6 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848F3F41DB8358B00F6F9E6 /* UIColorExtension.swift */; };
 		4848F3F71DB8372400F6F9E6 /* HomeViewControllerConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848F3F61DB8372400F6F9E6 /* HomeViewControllerConstraints.swift */; };
+		4866C2101DE631AE004CFEC7 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4866C20F1DE631AE004CFEC7 /* AlamofireImage.framework */; };
+		4866C2111DE63217004CFEC7 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4894EE0F1DB96C0D006D1CB2 /* ObjectMapper.framework */; };
 		4894EE0C1DB96B9B006D1CB2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894EE0B1DB96B9B006D1CB2 /* Item.swift */; };
 		4894EE101DB96C0D006D1CB2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4894EE0D1DB96C0D006D1CB2 /* Alamofire.framework */; };
 		4894EE111DB96C0D006D1CB2 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4894EE0E1DB96C0D006D1CB2 /* AlamofireObjectMapper.framework */; };
-		4894EE121DB96C0D006D1CB2 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4894EE0F1DB96C0D006D1CB2 /* ObjectMapper.framework */; };
 		4894EE141DB96C2D006D1CB2 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894EE131DB96C2D006D1CB2 /* ItemRequest.swift */; };
 		4894EE161DB96D2B006D1CB2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894EE151DB96D2B006D1CB2 /* Request.swift */; };
 		4894EE181DB96E2B006D1CB2 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894EE171DB96E2B006D1CB2 /* URL.swift */; };
@@ -36,6 +37,7 @@
 		4848F3F11DB8308600F6F9E6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Swinjected/UI/ViewController/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		4848F3F41DB8358B00F6F9E6 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Helper/UIColorExtension.swift; sourceTree = "<group>"; };
 		4848F3F61DB8372400F6F9E6 /* HomeViewControllerConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewControllerConstraints.swift; path = Swinjected/UI/ViewController/HomeViewControllerConstraints.swift; sourceTree = SOURCE_ROOT; };
+		4866C20F1DE631AE004CFEC7 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "Pods/../build/Debug-iphoneos/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
 		4894EE0B1DB96B9B006D1CB2 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4894EE0D1DB96C0D006D1CB2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/swinjected-agldzcqxcoamghbjurvujdumkehp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		4894EE0E1DB96C0D006D1CB2 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/swinjected-agldzcqxcoamghbjurvujdumkehp/Build/Products/Debug-iphonesimulator/AlamofireObjectMapper/AlamofireObjectMapper.framework"; sourceTree = "<group>"; };
@@ -63,9 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4866C2111DE63217004CFEC7 /* ObjectMapper.framework in Frameworks */,
+				4866C2101DE631AE004CFEC7 /* AlamofireImage.framework in Frameworks */,
 				4894EE101DB96C0D006D1CB2 /* Alamofire.framework in Frameworks */,
 				4894EE111DB96C0D006D1CB2 /* AlamofireObjectMapper.framework in Frameworks */,
-				4894EE121DB96C0D006D1CB2 /* ObjectMapper.framework in Frameworks */,
 				4896A96E1DB82C45000CF878 /* PureLayout.framework in Frameworks */,
 				4896A96F1DB82C45000CF878 /* Swinject.framework in Frameworks */,
 				6626BF1DC38F7AEBA24AACD4 /* Pods_swinjected.framework in Frameworks */,
@@ -87,6 +90,7 @@
 		33C79EEB2452FA5743FCAFBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4866C20F1DE631AE004CFEC7 /* AlamofireImage.framework */,
 				4894EE0D1DB96C0D006D1CB2 /* Alamofire.framework */,
 				4894EE0E1DB96C0D006D1CB2 /* AlamofireObjectMapper.framework */,
 				4894EE0F1DB96C0D006D1CB2 /* ObjectMapper.framework */,
@@ -465,6 +469,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/PureLayout",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Swinject",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AlamofireImage",
 				);
 				INFOPLIST_FILE = swinjected/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -485,6 +490,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/PureLayout",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Swinject",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AlamofireImage",
 				);
 				INFOPLIST_FILE = swinjected/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

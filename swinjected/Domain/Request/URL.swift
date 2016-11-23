@@ -8,4 +8,4 @@
 
 import Foundation
 
-let ITEM_REQUEST_URL = "https://gist.githubusercontent.com/ppamorim/b80164879377b81b2805893bb71adcf3/raw/7b74093b61d7000ce6654e6a1e36f4fca8ab9b03/gistfile1.txt"
+let ITEM_REQUEST_URL = "https://gist.githubusercontent.com/ppamorim/b80164879377b81b2805893bb71adcf3/raw/880645eed1b0e9e2a5ae43dc3417e30e49997655/gistfile1.txt"
