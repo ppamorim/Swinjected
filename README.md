@@ -2,6 +2,11 @@
 
 Sample app that provides a MVP structure using Swinject that allow a clean architecture.
 
+Structure
+---------
+
+![Graph][3]
+
 Developed By
 ------------
 
@@ -45,6 +50,7 @@ License
 
 [1]: ./art/logo_compress.png
 [2]: ./art/linkedin-logo.png
+[3]: ./art/graph.png
 
 [10]: https://github.com/Swinject/Swinject
 [11]: https://github.com/PureLayout/PureLayout
