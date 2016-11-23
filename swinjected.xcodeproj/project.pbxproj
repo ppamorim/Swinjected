@@ -26,15 +26,16 @@
 		4896A9781DB82E2D000CF878 /* HomePresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4896A9771DB82E2D000CF878 /* HomePresenterImpl.swift */; };
 		4896A97A1DB82E38000CF878 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4896A9791DB82E38000CF878 /* HomeInteractor.swift */; };
 		4896A97C1DB82E41000CF878 /* HomeInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4896A97B1DB82E41000CF878 /* HomeInteractorImpl.swift */; };
+		48AEF8F91DE5ECB3006A955C /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AEF8F81DE5ECB3006A955C /* ItemViewCell.swift */; };
 		6626BF1DC38F7AEBA24AACD4 /* Pods_swinjected.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D34DB84BD37FD0832F31677 /* Pods_swinjected.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B6DC4C476B95C6ACBF2A2ED /* Pods-swinjected.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swinjected.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swinjected/Pods-swinjected.debug.xcconfig"; sourceTree = "<group>"; };
 		47CDE636BDD2A8C54A7FBD10 /* Pods-swinjected.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swinjected.release.xcconfig"; path = "Pods/Target Support Files/Pods-swinjected/Pods-swinjected.release.xcconfig"; sourceTree = "<group>"; };
-		4848F3F11DB8308600F6F9E6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Swinjected/UI/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
-		4848F3F41DB8358B00F6F9E6 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		4848F3F61DB8372400F6F9E6 /* HomeViewControllerConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewControllerConstraints.swift; path = Swinjected/UI/HomeViewControllerConstraints.swift; sourceTree = SOURCE_ROOT; };
+		4848F3F11DB8308600F6F9E6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Swinjected/UI/ViewController/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		4848F3F41DB8358B00F6F9E6 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Helper/UIColorExtension.swift; sourceTree = "<group>"; };
+		4848F3F61DB8372400F6F9E6 /* HomeViewControllerConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewControllerConstraints.swift; path = Swinjected/UI/ViewController/HomeViewControllerConstraints.swift; sourceTree = SOURCE_ROOT; };
 		4894EE0B1DB96B9B006D1CB2 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4894EE0D1DB96C0D006D1CB2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/swinjected-agldzcqxcoamghbjurvujdumkehp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		4894EE0E1DB96C0D006D1CB2 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/swinjected-agldzcqxcoamghbjurvujdumkehp/Build/Products/Debug-iphonesimulator/AlamofireObjectMapper/AlamofireObjectMapper.framework"; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		4896A9771DB82E2D000CF878 /* HomePresenterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterImpl.swift; sourceTree = "<group>"; };
 		4896A9791DB82E38000CF878 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		4896A97B1DB82E41000CF878 /* HomeInteractorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorImpl.swift; sourceTree = "<group>"; };
+		48AEF8F81DE5ECB3006A955C /* ItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
 		4D34DB84BD37FD0832F31677 /* Pods_swinjected.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swinjected.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 		4896A9701DB82D56000CF878 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				48AEF8F71DE5EC9D006A955C /* ViewCell */,
 				4848F3F31DB8357E00F6F9E6 /* Helper */,
 				4896A9711DB82D5E000CF878 /* ViewController */,
 			);
@@ -198,6 +201,14 @@
 				4896A9721DB82D66000CF878 /* Presenter */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		48AEF8F71DE5EC9D006A955C /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				48AEF8F81DE5ECB3006A955C /* ItemViewCell.swift */,
+			);
+			path = ViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +342,7 @@
 				4896A97A1DB82E38000CF878 /* HomeInteractor.swift in Sources */,
 				4894EE141DB96C2D006D1CB2 /* ItemRequest.swift in Sources */,
 				4896A95B1DB82ABF000CF878 /* AppDelegate.swift in Sources */,
+				48AEF8F91DE5ECB3006A955C /* ItemViewCell.swift in Sources */,
 				4848F3F71DB8372400F6F9E6 /* HomeViewControllerConstraints.swift in Sources */,
 				4848F3F21DB8308600F6F9E6 /* HomeViewController.swift in Sources */,
 				4894EE181DB96E2B006D1CB2 /* URL.swift in Sources */,

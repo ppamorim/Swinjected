@@ -12,6 +12,7 @@ class HomePresenterImpl: HomePresenter {
   
   var view: HomeView?
   var homeInteractor: HomeInteractor?
+  var items: Array<Item> = []
   
   func sync() {
     homeInteractor?.callback = self
@@ -22,12 +23,13 @@ class HomePresenterImpl: HomePresenter {
 
 extension HomePresenterImpl: HomeCallback {
   
-  func onSuccess() {
+  func onSuccess(_ items: Array<Item>) {
+    self.items = items
     view?.onSuccess()
   }
   
-  func onError() {
-    view?.onError()
+  func onError(_ error: Swift.Error) {
+    view?.onError(error)
   }
   
 }

@@ -13,8 +13,9 @@ class HomeInteractorImpl: HomeInteractor {
   var callback: HomeCallback?
   
   func requestData() {
-    requestItems(success: { data in self.callback?.onSuccess() },
-                 error: { self.callback?.onError() })
+    requestItems(
+      successHandler: { data in self.callback?.onSuccess(data) },
+      errorHandler: { error in self.callback?.onError(error) })
   }
   
 }

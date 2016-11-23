@@ -10,17 +10,17 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
-func requestItems(success: @escaping Success<Array<Item>>, error: @escaping Error) {
+func requestItems(successHandler: @escaping Success<Array<Item>>, errorHandler: @escaping Error) {
   Alamofire
     .request(ITEM_REQUEST_URL)
     .validate()
     .responseArray { (dataResponse: DataResponse<Array<Item>>) in
       switch dataResponse.result {
       case .success(let value):
-        success(value)
+        successHandler(value)
         break
-      case .failure:
-        error()
+      case .failure(let error):
+        errorHandler(error)
         break
       }
   }

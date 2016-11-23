@@ -5,6 +5,6 @@ protocol HomeInteractor {
 }
 
 protocol HomeCallback {
-  func onSuccess()
-  func onError()
+  func onSuccess(_ items: Array<Item>)
+  func onError(_ error: Swift.Error)
 }
