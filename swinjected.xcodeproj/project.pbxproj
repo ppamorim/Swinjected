@@ -473,6 +473,7 @@
 			baseConfigurationReference = 1B6DC4C476B95C6ACBF2A2ED /* Pods-swinjected.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/PureLayout",
@@ -494,6 +495,7 @@
 			baseConfigurationReference = 47CDE636BDD2A8C54A7FBD10 /* Pods-swinjected.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/PureLayout",

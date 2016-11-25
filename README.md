@@ -7,6 +7,20 @@ Structure
 
 ![Graph][3]
 
+How to build
+------------
+
+First of all, close your Xcode and verify if you have `Cocoapods` installed and updated.
+
+Open terminal and type:
+
+```
+cd swinjected
+pod install
+```
+
+Then open `swinjected.xcworkspace`
+
 Developed By
 ------------
 
